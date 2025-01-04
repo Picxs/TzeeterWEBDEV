@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .navigation a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+  }
+  
+  .stats a {
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+  }
+  
+  .stats a:hover {
+    text-decoration: underline;
+  }
+  
+  .stats .stat-number {
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+  }
+  
+  .actions a {
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .actions a.reply:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+  }
+  
+  .actions a.retweet:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+  }
+  
+  .actions a.like:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+  }
+  
+  .profile-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  
+  .user-fullname {
+    color: rgb(15, 20, 25);
+  }
+  
+  .user-username {
+    color: rgb(83, 100, 113);
+  }
+  
+  .bio {
+    color: rgb(15, 20, 25);
+  }
+
+  .tweet {
+    padding: 10px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+  }
+  
+  .tweet:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  .tweet .tweet-text {
+    color: rgb(15, 20, 25);
+  }
+  
+  .tweet .tweet-date {
+    color: rgb(83, 100, 113);
+  }
+  

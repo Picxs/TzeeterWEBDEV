@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeeter</title>
     <link rel="stylesheet" href="style.css">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
   <header> 
     <ul class="navigation">
-        <li><a href="#"> Home</a></li>
-        <li><a href="#"> Explore</a></li>
-        <li><a href="#"> Notifications</a></li>
-        <li><a href="#"> Messages</a></li>
-        <li><a href="#"> Bookmarks</a></li>
-        <li><a href="#"> Profile</a></li>
-        <li><a href="#"> More</a></li>
+        <img src="tiziu.png">
+        <li><a href="#"> <i class="bi bi-house-door"></i> Home</a></li>
+        <li><a href="#"> <i class="bi bi-hash"></i> Explore</a></li>
+        <li><a href="#"> <i class="bi bi-bell"></i> Notifications</a></li>
+        <li><a href="#"> <i class="bi bi-envelope"></i> Messages</a></li>
+        <li><a href="#"> <i class="bi bi-bookmark"></i> Bookmarks</a></li>
+        <li><a href="#"> <i class="bi bi-person-fill"></i> Profile</a></li>
+        <li><a href="#"> <i class="bi bi-three-dots"></i> More</a></li>    
+        <a href="#" class="tweet-button"> Tweet</a>
     </ul>
   </header>
   <main>
@@ -26,7 +29,7 @@
           <h5 class="user-username">@Victor</h5>
           <p class="bio">Estudante na Universidade Federal do Ceará</p> 
           <ul> 
-            <li><a href="#">Quixadá</a> Joined February 2020</li>
+            <li><i class="bi bi-geo-alt"></i> Quixadá <i class="bi bi-calendar3"></i> Joined February 2020</li>
           </ul>
 
           <ul class="stats">
@@ -35,11 +38,11 @@
             <li><a href="#"><span class="stat-number">10</span> Followers</a></li>
           </ul>
 
-            <div class="actions tloptions">
-                <a href="#">Tzeets</a>
-                <a href="#">Tzeets & replies</a>
-                <a href="#">Media</a>
-                <a href="#">Links</a>
+            <div class="links-container">
+              <a href="#">Tzeets</a>
+              <a href="#">Tzeets & replies</a>
+              <a href="#">Media</a>
+              <a href="#">Links</a>
             </div>
       </section>
 
@@ -50,10 +53,11 @@
             <h4 class="user-fullname">Victor Gabriel da Silva</h4>
             <h5 class="user-username">@Victor • 30m atrás</h5>
             <p  class="tweet-text">Acho que minha farm de ferro não está tão eficiente, alguém pode me ajudar?</p>
-            <div class="actions">
-              <a href="#" class="action like">Like</a>  
-              <a href="#" class="action reply">Reply</a>
+            <div class="actions-links">
+              <a href="#" class="action like"> <i class="bi bi-heart"></i> Like</a>  
+              <a href="#" class="asction reply"> <i class="bi bi-chat"></i> Reply</a>
               <a href="#" class="action retweet">Retzeet</a>
+              <a href="#" class="action share">Share</a>
             </div>
           </div>
         </article>

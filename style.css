@@ -1,18 +1,53 @@
 body {
-    background-color: white;
-    color: rgb(15, 20, 25);
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
   }
 
+  @media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; 
+    }
+
+    .column {
+        flex: none; 
+        margin-bottom: 16px;
+    }
+}
+
+  .main-container {
+    display: flex; 
+    gap: 16px; 
+    width: 100%;
+    max-width: 1200px; 
+    padding: 16px;
+}
+
+.column {
+  flex: 1; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column.large {
+  flex: 2; 
+}
+
+.column.small {
+  flex: 1; 
+}
   .navigation{
    list-style: none;
   }
   
   .navigation a {
-    display: inline-block; 
+    display: inline-flex;
     color: rgb(15, 20, 25);
     text-decoration: none; 
     padding: 10px 15px; 
@@ -41,22 +76,22 @@ body {
   
   .action-links {
     display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente */
-    width: 100%; /* Garante que ocupe toda a largura disponível */
-    padding: 10px 0; /* Espaçamento */
+    justify-content: space-between;
+    width: 100%; 
+    padding: 10px 0; 
     text-align: center;
   }
 
   .action-links a {
     display: flex;
-    align-items: center; /* Alinha o ícone e o texto verticalmente */
-    justify-content: center; /* Alinha o conteúdo (ícone + texto) */
-    text-decoration: none; /* Remove o sublinhado */
-    color: black; /* Cor padrão do texto */
-    font-size: 16px; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento interno */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave */
-    width: 100%; /* Ocupa toda a largura disponível */
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    color: black; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    width: 100%; 
   }
 
   
@@ -78,7 +113,24 @@ body {
     background-color: rgba(249, 24, 128, 0.1);
     color: rgb(99, 23, 58);
   }
-  
+
+  .profile-button{
+    position: absolute;
+    padding: 5px 10px; 
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; 
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .profile-button:hover{
+    background-color: #0056b3;
+  }
+
+
   .profile-photo {
     width: 64px;
     height: 64px;
@@ -119,40 +171,112 @@ body {
   }
 
   .tweet-button {
-    display: inline-block; /* Faz o botão ocupar apenas o espaço necessário */
-    padding: 10px 20px; /* Ajusta o tamanho do botão */
-    background-color: #007bff; /* Cor azul */
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
     color: white;
     text-decoration: none;
-    border-radius: 200px; /* Bordas arredondadas */
+    border-radius: 200px; 
     font-size: 16px;
     text-align: center;
     transition: background-color 0.3s ease;
   }
   .tweet-button:hover {
-    background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+    background-color: #0056b3; 
   }
 
 
-  /* Estilos para o container */
+
 .links-container {
-  display: flex; /* Para distribuir os itens igualmente */
-  justify-content: space-between; /* Espaça igualmente os itens ao longo da linha */
-  width: 100%; /* Garantir que ocupe toda a largura disponível */
-  padding: 10px 0; /* Adiciona um pouco de espaçamento */
+  display: flex; 
+  justify-content:space-evenly; 
+  width: 100%; 
+  padding: 10px 0;
 }
 
-/* Estilos para os links */
+
 .links-container a {
-  text-decoration: none; /* Remove o sublinhado do link */
-  color: black; /* Cor do texto */
-  font-size: 16px; /* Ajusta o tamanho da fonte */
-  padding: 10px 20px; /* Espaçamento interno */
-  transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+  text-decoration: none; 
+  color: black; 
+  font-size: 16px; 
+  padding: 10px 20px; 
+  transition: background-color 0.3s ease; 
 }
 
-/* Efeito de hover: muda o background */
+
 .links-container a:hover {
-  background-color: #007bff; /* A cor do fundo ao passar o mouse (ajuste conforme a cor usada nos Tzeets) */
-  color: white; /* Mudança da cor do texto para branco */
+  background-color: #007bff;
+  color: white; 
 }
+
+
+.container {
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.suggestions h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.name {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.follow-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: #0056b3;
+}
+
+.show-more {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.show-more:hover {
+  text-decoration: underline;
+}
+

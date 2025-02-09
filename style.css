@@ -129,13 +129,6 @@ body {
   .profile-button:hover{
     background-color: #0056b3;
   }
-
-
-  .profile-photo {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-  }
   
   .user-fullname {
     color: rgb(15, 20, 25);
@@ -280,3 +273,147 @@ body {
   text-decoration: underline;
 }
 
+
+.tzeet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.tzeet-text {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+}
+
+.reply-config {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.reply-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: rgb(29, 155, 240);
+  font-size: 14px;
+}
+
+.reply-link:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.multimedia-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; 
+  width: 100%;
+}
+
+.multimedia {
+  display: flex;
+  gap: 10px;
+  flex: 1; 
+}
+
+.media-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+
+.media-link:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.status-send {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  justify-content: flex-end;
+}
+
+
+.char-counter {
+  font-size: 14px;
+  color: rgb(83, 100, 113);
+  display: none; /* Oculta o contador inicialmente */
+}
+
+.separator {
+  margin: 0 5px;
+  color: rgb(83, 100, 113);
+}
+
+.add-tzeet {
+  font-size: 18px;
+  color: rgb(29, 155, 240);
+}
+
+.add-tzeet:hover {
+  color: rgb(0, 123, 255);
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+
+.send-button:disabled {
+  background-color: rgba(29, 155, 240, 0.5);
+  cursor: not-allowed;
+}
+
+.send-button:hover:enabled {
+  background-color: rgb(0, 123, 255);
+}
+
+/* Estilo do botão Tweet */
+.nav-button {
+  padding: 10px 20px; 
+  background-color: #007bff;
+  color: white;
+  border: none; 
+  border-radius: 30px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+
+.nav-button:hover {
+  background-color: #0056b3; 
+}

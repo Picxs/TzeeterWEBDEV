@@ -13,14 +13,46 @@
     <header> 
       <ul class="navigation">
           <img src="tiziu.png">
-          <li><a href="#"> <i class="bi bi-house-door"></i> Home</a></li>
+          <li><a href="index.html"> <i class="bi bi-house-door"></i> Home</a></li>
           <li><a href="#"> <i class="bi bi-hash"></i> Explore</a></li>
           <li><a href="#"> <i class="bi bi-bell"></i> Notifications</a></li>
           <li><a href="#"> <i class="bi bi-envelope"></i> Messages</a></li>
           <li><a href="#"> <i class="bi bi-bookmark"></i> Bookmarks</a></li>
-          <li><a href="#"> <i class="bi bi-person-fill"></i> Profile</a></li>
+          <li><a href="profile.html"> <i class="bi bi-person-fill"></i> Profile</a></li>
           <li><a href="#"> <i class="bi bi-three-dots"></i> More</a></li>    
-          <a href="#" class="tweet-button"> Tweet</a>
+          <button id="tweetButton" class="nav-button">Tweet</button>
+          
+          <dialog id="tzeetModal" class="tzeet-modal">
+            <div class="modal-content">
+              <form class="tzeet-form" method="dialog">
+                <div class="form-content">
+                  <img src="https://skinsmc.org/skinrender/aHR0cHM6Ly9za2luc21jLnMzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tL2NIQVJaSUVfZ0FNSU5HX25ldGhlcml0ZV9hcm1vdXIucG5n" alt="Foto do minecraft" class="profile-photo">
+                  <textarea class="tzeet-text" placeholder="Escreva seu Tzeet..."></textarea>
+                </div>
+          
+                <div class="multimedia-status">
+                  <div class="multimedia">
+                    <a href="#" class="media-link"><i class="bi bi-image"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-filetype-doc"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-emoji-smile"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-bar-chart"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-calendar-event"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-geo-alt"></i></a>
+                  </div>
+                
+                  <div class="status-send">
+                    <span class="char-counter">140 caracteres restantes</span>
+                    <span class="separator">|</span>
+                    <a href="#" class="add-tzeet">
+                      <i class="bi bi-plus-circle"></i>
+                    </a>
+                    <button type="submit" class="send-button" disabled>Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </dialog>
+
       </ul>
     </header>
   </div>
@@ -105,5 +137,6 @@
 </div>
 </div>
 
+<script src="scripts.js"></script>
 </body>
 </html>

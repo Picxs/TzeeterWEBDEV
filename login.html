@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tzeet</title>
+    <link rel="stylesheet" href="stylesLS.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="tiziu.png" alt="Tzeet Logo" class="login-logo">
+            <form action="login" method="POST" id="loginForm">
+                <p>Entre no Tzeet agora mesmo</p>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="loginButton" disabled>Entrar</button>
+                </div>
+            </form>
+            <div class="links">
+                <p>Não tem conta? <a href="signup.html" class="signup-link">Inscreva-se</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="scriptsL.js"></script>
+</body>
+</html>

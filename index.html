@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzeeter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="column small">
+    <header> 
+      <ul class="navigation">
+          <img src="tiziu.png">
+          <li><a href="index.html"> <i class="bi bi-house-door"></i> Home</a></li>
+          <li><a href="#"> <i class="bi bi-hash"></i> Explore</a></li>
+          <li><a href="#"> <i class="bi bi-bell"></i> Notifications</a></li>
+          <li><a href="#"> <i class="bi bi-envelope"></i> Messages</a></li>
+          <li><a href="#"> <i class="bi bi-bookmark"></i> Bookmarks</a></li>
+          <li><a href="profile.html"> <i class="bi bi-person-fill"></i> Profile</a></li>
+          <li><a href="#"> <i class="bi bi-three-dots"></i> More</a></li>    
+          <button id="tweetButton" class="nav-button">Tweet</button>
+          
+          <dialog id="tzeetModal" class="tzeet-modal">
+            <div class="modal-content">
+              <form class="tzeet-form" method="dialog">
+                <div class="form-content">
+                  <img src="https://skinsmc.org/skinrender/aHR0cHM6Ly9za2luc21jLnMzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tL2NIQVJaSUVfZ0FNSU5HX25ldGhlcml0ZV9hcm1vdXIucG5n" alt="Foto do minecraft" class="profile-photo">
+                  <textarea class="tzeet-text" placeholder="Escreva seu Tzeet..."></textarea>
+                </div>
+          
+                <div class="multimedia-status">
+                  <div class="multimedia">
+                    <a href="#" class="media-link"><i class="bi bi-image"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-filetype-doc"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-emoji-smile"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-bar-chart"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-calendar-event"></i></a>
+                    <a href="#" class="media-link"><i class="bi bi-geo-alt"></i></a>
+                  </div>
+                
+                  <div class="status-send">
+                    <span class="char-counter">140 caracteres restantes</span>
+                    <span class="separator">|</span>
+                    <a href="#" class="add-tzeet">
+                      <i class="bi bi-plus-circle"></i>
+                    </a>
+                    <button type="submit" class="send-button" disabled>Enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </dialog>
+
+      </ul>
+    </header>
+  </div>
+
+<div class="main-container">
+  <div class="column large">
+    <main>
+      <section class="profile">
+          <h2>Home</h2>
+          <form class="tzeet-form">
+            <div class="form-content">
+              <img src="https://skinsmc.org/skinrender/aHR0cHM6Ly9za2luc21jLnMzLnVzLWVhc3QtMi5hbWF6b25hd3MuY29tL2NIQVJaSUVfZ0FNSU5HX25ldGhlcml0ZV9hcm1vdXIucG5n" alt="Foto do minecraft" class="profile-photo">
+              <textarea class="tzeet-text" placeholder="O que está acontecendo?"></textarea>
+            </div>
+
+            <div class="reply-config">
+              <a href="#" class="reply-link">
+                <i class="bi bi-globe"></i> Everyone can reply
+              </a>
+            </div>
+
+            <div class="multimedia-status">
+              <div class="multimedia">
+                <a href="#" class="media-link"><i class="bi bi-image"></i></a>
+                <a href="#" class="media-link"><i class="bi bi-filetype-doc"></i></a>
+                <a href="#" class="media-link"><i class="bi bi-emoji-smile"></i></a>
+                <a href="#" class="media-link"><i class="bi bi-bar-chart"></i></a>
+                <a href="#" class="media-link"><i class="bi bi-calendar-event"></i></a>
+                <a href="#" class="media-link"><i class="bi bi-geo-alt"></i></a>
+              </div>
+            
+              <div class="status-send">
+                <span class="char-counter">140 caracteres restantes</span>
+                <span class="separator">|</span>
+                <a href="#" class="add-tzeet">
+                  <i class="bi bi-plus-circle"></i>
+                </a>
+                <button type="submit" class="send-button" disabled>Enviar</button>
+              </div>
+            </div>
+          </form>
+      </section>
+  
+      <section class="tweets">
+        <article class="tweet">
+          <div class="tzeet-content">
+            <h4 class="user-fullname">Victor Gabriel da Silva</h4>
+            <h5 class="user-username">@Victor • 30m atrás</h5>
+            <p class="tweet-text">Acho que minha farm de ferro não está tão eficiente, alguém pode me ajudar?</p>
+            <div class="actions">
+              <a href="#" class="action like"> <i class="bi bi-heart"></i> 200</a>  
+              <a href="#" class="action reply"> <i class="bi bi-chat"></i> 5</a>
+              <a href="#" class="action retweet"> <i class="bi bi-arrow-repeat"></i> 10</a>
+              <a href="#" class="action share"><i class="bi bi-arrow-bar-up"></i></a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+<div class="column small">
+  <div class="right">
+    <div class="suggestions-column">
+      <header class="search-header">
+          <input type="search" placeholder="Username" aria-label="Search Username" class="search-input">
+      </header>
+      <main>
+          <section class="suggestions">
+              <h4>Talvez você curta</h4>
+              <ul class="user-list">
+                  <li class="user">
+                      <img src="https://minotar.net/helm/mhf_steve/600.png" alt="Steve" class="avatar">
+                      <span class="name">Steve</span>
+                      <button class="follow-btn" aria-label="Seguir Carlos">Seguir</button>
+                  </li>
+                  <li class="user">
+                      <img src="https://minecraftfaces.com/wp-content/bigfaces/big-zombie-face.png" alt="Avatar de Zumbi" class="avatar">
+                      <span class="name">Zumbi</span>
+                      <button class="follow-btn" aria-label="Seguir Maria">Seguir</button>
+                  </li>
+                  <li class="user">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlydpj-zyni4zZXYjAVLLcp0RHbBPAQVd96w&s" alt="Avatar de Villager" class="avatar">
+                      <span class="name">Aldeão</span>
+                      <button class="follow-btn" aria-label="Seguir Ana">Seguir</button>
+                  </li>
+              </ul>
+              <a href="#" class="show-more">Mostrar mais</a>
+          </section>
+      </main>
+  </div>
+ </div>
+</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
